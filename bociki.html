@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bociki.pl - Sklep Serwera Minecraft</title>
+  <link rel="icon" type="image/png" href="grass.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00ff80, #00c0ff);
+      color: #0d0d0d;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 0 20px #00ff80;
+      position: relative;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #000;
+      font-size: 0.9rem;
+    }
+
+    main {
+      padding: 50px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #00ff80;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #00ff80;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product {
+      background: rgba(30, 30, 30, 0.95);
+      border: 2px solid #00ff80;
+      border-radius: 15px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 0 25px rgba(0, 255, 128, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .product:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 40px rgba(0, 255, 128, 0.6);
+    }
+
+    .product h2 {
+      color: #00ff80;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #ffd700;
+      font-weight: bold;
+      margin: 10px 0;
+      text-shadow: 0 0 10px #ffd700;
+    }
+
+    button {
+      background-color: #00ff80;
+      border: none;
+      border-radius: 10px;
+      color: #0d0d0d;
+      padding: 10px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00ff80;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #00cc66;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-top: 2px solid #00ff80;
+    }
+
+    .side-emoji {
+      position: fixed;
+      font-size: 3rem;
+      opacity: 0.5;
+      z-index: 1;
+      animation: float 4s ease-in-out infinite;
+      user-select: none;
+    }
+
+    .left {
+      left: 2%;
+      top: 40%;
+      animation-delay: 1s;
+    }
+
+    .right {
+      right: 2%;
+      top: 30%;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+  <script>
+    function pokazKontakt() {
+      alert("💬 Żeby to kupić, skontaktuj się na DC: dawidek_sigma112");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🎮 Bociki.pl - Sklep Serwera Minecraft</h1>
+    <p>Kup rangi i klucze wspierając nasz serwer!</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">💎 Rangi i Klucze</h2>
+
+    <div class="products">
+      <div class="product">
+        <h2>Ranga VIP</h2>
+        <p>Dostęp do ekskluzywnych komend, koloru na czacie i bonusów.</p>
+        <div class="price">10 zł</div>
+        <button onclick="pokazKontakt()">Kup teraz</button>
+      </div>
+
+      <div class="product">
+        <h2>Ranga SVIP</h2>
+        <p>Więcej komend i większe bonusy dla graczy premium.</p>
+        <div class="price">20 zł</div>
+        <button onclick="pokazKontakt()">Kup teraz</button>
+      </div>
+
+      <div class="product">
+        <h2>Ranga GVIP</h2>
+        <p>Najwyższa ranga z pełnymi przywilejami na serwerze!</p>
+        <div class="price">40 zł</div>
+        <button onclick="pokazKontakt()">Kup teraz</button>
+      </div>
+
+      <div class="product">
+        <h2>Klucze Legendarne (10 szt.)</h2>
+        <p>Najrzadsze nagrody i unikatowe przedmioty!</p>
+        <div class="price">12 zł</div>
+        <button onclick="pokazKontakt()">Kup teraz</button>
+      </div>
+
+      <div class="product">
+        <h2>Klucze Epickie (10 szt.)</h2>
+        <p>Rzadkie nagrody i dobre itemy!</p>
+        <div class="price">8 zł</div>
+        <button onclick="pokazKontakt()">Kup teraz</button>
+      </div>
+
+      <div class="product">
+        <h2>Klucze Zwykłe (10 szt.)</h2>
+        <p>Podstawowe nagrody i ciekawe dropy!</p>
+        <div class="price">5 zł</div>
+        <button onclick="pokazKontakt()">Kup teraz</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="side-emoji left">💎</div>
+  <div class="side-emoji right">🔑</div>
+
+  <footer>&copy; 2025 Bociki.pl — Wszystkie prawa zastrzeżone.</footer>
+</body>
+</html>
+
+
+RewriteEngine On
+
+
+RewriteRule ^$ index.html [L]
+RewriteRule ^(bociki\.html|bociki\.pl)$ index.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ $1.html [L]
+
